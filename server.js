@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb+srv://MaciejKut:USQ28Ti8VDwesbE@cluster0-wju01.mongodb.net/test?retryWrites=true&w=majority', { useNewUrlParser: true });
+mongoose.connect('mongodb+srv://MaciejKut:<USQ28Ti8VDwesbE>@cluster0-wju01.mongodb.net/test?retryWrites=true&w=majority', { useNewUrlParser: true });
 
 //new user Schema
 const userSchema = new Schema({
