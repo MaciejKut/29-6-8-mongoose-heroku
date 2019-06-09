@@ -2,7 +2,25 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://localhost:27017/test', { useNewUrlParser: true });
+// mongoose.connect('cluster0-shard-00-00-wju01.mongodb.net:27017', { useNewUrlParser: true });
+
+
+const MongoClient = require('mongodb').MongoClient;
+const uri = "mongodb+srv://MaciejKut:USQ28Ti8VDwesbE@cluster0-wju01.mongodb.net/test?retryWrites=true&w=majority";
+const client = new MongoClient(uri, { useNewUrlParser: true });
+client.connect(err => {
+    const collection = client.db("test").collection("devices");
+    // perform actions on the collection object
+    client.close();
+});
+
+
+
+
+
+
+
+
 
 //new user Schema
 const userSchema = new Schema({
