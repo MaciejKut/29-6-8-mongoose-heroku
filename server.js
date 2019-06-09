@@ -79,10 +79,10 @@ const mark = new User({
     password: 'password'
 });
 
-// mark.manify(function (err, name) {
-//     if (err) throw err;
-//     console.log('Twoje nowe imię to: ' + name);
-// });
+mark.manify(function (err, name) {
+    if (err) throw err;
+    console.log('Twoje nowe imię to: ' + name);
+});
 
 // mark.save(function (err) {
 //     if (err) throw err;
