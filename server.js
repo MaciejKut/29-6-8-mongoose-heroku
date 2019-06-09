@@ -36,59 +36,59 @@ userSchema.pre('save', function (next) {
 });
 
 const User = mongoose.model('User', userSchema);
-//instancje klasy User
-const kenny = new User({
-    name: 'Kenny',
-    username: 'Kenny_the_boy',
-    password: 'password'
-});
+// //instancje klasy User
+// const kenny = new User({
+//     name: 'Kenny',
+//     username: 'Kenny_the_boy',
+//     password: 'password'
+// });
 // do tego moentu jest taki nasz szablon
 
 
-kenny.manify(function (err, name) {
-    if (err) throw err;
-    console.log('Twoje nowe imię to: ' + name);
-});
+// kenny.manify(function (err, name) {
+//     if (err) throw err;
+//     console.log('Twoje nowe imię to: ' + name);
+// });
 
-kenny.save(function (err) {
-    if (err) throw err;
+// kenny.save(function (err) {
+//     if (err) throw err;
 
-    console.log('Uzytkownik ' + kenny.name + ' zapisany pomyslnie');
-});
+//     console.log('Uzytkownik ' + kenny.name + ' zapisany pomyslnie');
+// });
 
-const benny = new User({
-    name: 'Benny',
-    username: 'Benny_the_boy',
-    password: 'password'
-});
+// const benny = new User({
+//     name: 'Benny',
+//     username: 'Benny_the_boy',
+//     password: 'password'
+// });
 
-benny.manify(function (err, name) {
-    if (err) throw err;
-    console.log('Twoje nowe imię to: ' + name);
-});
+// benny.manify(function (err, name) {
+//     if (err) throw err;
+//     console.log('Twoje nowe imię to: ' + name);
+// });
 
-benny.save(function (err) {
-    if (err) throw err;
+// benny.save(function (err) {
+//     if (err) throw err;
 
-    console.log('Uzytkownik ' + benny.name + ' zapisany pomyslnie');
-});
+//     console.log('Uzytkownik ' + benny.name + ' zapisany pomyslnie');
+// });
 
-const mark = new User({
-    name: 'Mark',
-    username: 'Mark_the_boy',
-    password: 'password'
-});
+// const mark = new User({
+//     name: 'Mark',
+//     username: 'Mark_the_boy',
+//     password: 'password'
+// });
 
-mark.manify(function (err, name) {
-    if (err) throw err;
-    console.log('Twoje nowe imię to: ' + name);
-});
+// mark.manify(function (err, name) {
+//     if (err) throw err;
+//     console.log('Twoje nowe imię to: ' + name);
+// });
 
-mark.save(function (err) {
-    if (err) throw err;
+// mark.save(function (err) {
+//     if (err) throw err;
 
-    console.log('Uzytkownik ' + mark.name + ' zapisany pomyslnie');
-});
+//     console.log('Uzytkownik ' + mark.name + ' zapisany pomyslnie');
+// });
 
 User.find({}, function (err, res) {
     if (err) throw err;
