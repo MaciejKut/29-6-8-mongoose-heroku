@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://localhost/nodeappdatabase', { useNewUrlParser: true });
+mongoose.connect('mongodb+srv://cluster0-wju01.mongodb.net/test', { useNewUrlParser: true });
 
 //new user Schema
 const userSchema = new Schema({
