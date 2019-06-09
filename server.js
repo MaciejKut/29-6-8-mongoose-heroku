@@ -45,10 +45,10 @@ const kenny = new User({
 // do tego moentu jest taki nasz szablon
 
 
-// kenny.manify(function (err, name) {
-//     if (err) throw err;
-//     console.log('Twoje nowe imię to: ' + name);
-// });
+kenny.manify(function (err, name) {
+    if (err) throw err;
+    console.log('Twoje nowe imię to: ' + name);
+});
 
 // kenny.save(function (err) {
 //     if (err) throw err;
@@ -62,10 +62,10 @@ const benny = new User({
     password: 'password'
 });
 
-// benny.manify(function (err, name) {
-//     if (err) throw err;
-//     console.log('Twoje nowe imię to: ' + name);
-// });
+benny.manify(function (err, name) {
+    if (err) throw err;
+    console.log('Twoje nowe imię to: ' + name);
+});
 
 // benny.save(function (err) {
 //     if (err) throw err;
