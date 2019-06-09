@@ -206,9 +206,9 @@ const findBennyAndRemove = function () {
 
 
 Promise.all([kenny.save(), mark.save(), benny.save()])
-    .then(findAllUsers)
-    .then(findSpecificRecord)
-    .then(updadeUserPassword)
+    // .then(findAllUsers)
+    // .then(findSpecificRecord)
+    // .then(updadeUserPassword)
     // .then(updateUsername)
     // .then(findMarkAndDelete)
     // .then(findKennyAndDelete)
