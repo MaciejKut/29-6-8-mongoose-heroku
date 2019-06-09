@@ -4,12 +4,10 @@ const Schema = mongoose.Schema;
 mongoose.Promise = global.Promise;
 // mongoose.connect('cluster0-shard-00-00-wju01.mongodb.net:27017', { useNewUrlParser: true });
 
-mongoose.connect(
-    "mongodb+srv://MaciejKut:USQ28Ti8VDwesbE@cluster0-wju01.mongodb.net/test?retryWrites=true&w=majority",
+mongoose.connect('mongodb+srv://MaciejKut:maciej@cluster0-wju01.mongodb.net/test?retryWrites=true&w=majority',
     {
         useNewUrlParser: true
-    }
-);
+    });
 
 
 //new user Schema
@@ -206,11 +204,11 @@ const findBennyAndRemove = function () {
 
 
 Promise.all([kenny.save(), mark.save(), benny.save()])
-    // .then(findAllUsers)
-    // .then(findSpecificRecord)
-    // .then(updadeUserPassword)
-    // .then(updateUsername)
-    // .then(findMarkAndDelete)
-    // .then(findKennyAndDelete)
-    // .then(findBennyAndRemove)
+    .then(findAllUsers)
+    .then(findSpecificRecord)
+    .then(updadeUserPassword)
+    .then(updateUsername)
+    .then(findMarkAndDelete)
+    .then(findKennyAndDelete)
+    .then(findBennyAndRemove)
     .catch(console.log.bind(console))
